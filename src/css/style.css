@@ -9,6 +9,7 @@
     --pln-color: hsl(225, 100%, 98%);
     --p-color: hsl(224, 23%, 55%);
     --shadow-c: hsl(223, 47%, 23%);
+    --btn-hover: hsl(245, 75%, 65%);
 }
 
 html {
@@ -116,7 +117,12 @@ main {
 .price__link {
     color: var(--btn-color);
     font-weight: 700;
+    transition: all .2s linear;
     font-size: 1.4rem;
+}
+.price__link:hover {
+    color: var(--btn-hover);
+    text-decoration: none;
 }
 .card__button-payment {
     background-color: var(--btn-color);
@@ -128,6 +134,10 @@ main {
     border-radius: 8px;
     cursor: pointer;
     box-shadow: 0px 3px 8px -3px var(--btn-color);
+    transition: all .2s linear;
+}
+.card__button-payment:hover {
+    background-color: var(--btn-hover);
 }
 .card__button-cancel {
     color: var(--p-color);
@@ -135,5 +145,10 @@ main {
     font-size: 1.4rem;
     letter-spacing: .5px;
     cursor: pointer;
+    transition: all .2s linear;
+    font-weight: 900;
+}
+.card__button-cancel:hover {
+    color: var(--black);
 }
 
